@@ -100,7 +100,7 @@
                     <td>alasdaniel@gmail.com</td>
                     <td>7070-7070</td>
                     <td>Activo</td>
-                    <td><a href="#" class="text-green">Editar</a> <a href="#" class="text-danger" data-bs-toggle="modal" data-bs-target="#confirmarEliminar">Eliminar</a></td>
+                    <td><a href="#" class="text-green" data-bs-toggle="modal" data-bs-target="#modalEditarTecnico">Editar</a> <a href="#" class="text-danger" data-bs-toggle="modal" data-bs-target="#confirmarEliminar">Eliminar</a></td>
                 </tr>
                 
                 <!-- Más filas -->
@@ -178,6 +178,49 @@
     </div>
   </div>
 </div>
+
+
+<div class="modal fade" id="modalEditarTecnico" tabindex="-1" aria-labelledby="modalEditarTecnicoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalEditarTecnicoLabel">Editar Técnico</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Nombre completo</label>
+            <input type="text" class="form-control" value="Juan Pérez">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Especialidad</label>
+            <input type="text" class="form-control" value="Hardware">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" value="juan@mail.com">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Teléfono</label>
+            <input type="tel" class="form-control" value="1234-5678">
+          </div>
+
+          <div class="text-end">
+            <button type="submit" class="btn btn-primary">Guardar cambios</button>
+          </div>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
