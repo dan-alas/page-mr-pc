@@ -1,0 +1,65 @@
+:root{
+
+    --color-oscuro: #08192B;
+    --color-azul: #1D5591;
+    --color-azul-light: #35669B;
+
+    --color-card-1: #ED9828;
+    --color-card-2: #C14E99;
+    --color-card-3: #37B84F;
+    --color-card-4: #398C99;
+
+
+}
+
+.bg-primary{
+    background-color: var(--color-oscuro) !important;
+
+}
+
+.bg-light{
+    background-color: var(--color-azul) !important;
+
+}
+
+.bg-active{
+    background-color: var(--color-azul-light);
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* opcional para evitar scroll general */
+}
+
+.number-size{
+    font-size: 5rem;
+}
+
+.bg-card-1{
+    background-color: var(--color-card-1);
+}
+.bg-card-2{
+    background-color: var(--color-card-2);
+}
+.bg-card-3{
+    background-color: var(--color-card-3);
+}
+.bg-card-4{
+    background-color: var(--color-card-4);
+}
+
+.sidebar {
+  overflow-y: auto; /* Para que permita scroll cuando haya más contenido */
+}
+
+/* En pantallas md+ */
+@media (min-width: 768px) {
+  .sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: hidden; /* Sin scroll en pantallas grandes */
+  }
+}
