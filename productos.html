@@ -80,7 +80,7 @@
                 <option>Tarjetas madre</option>
             </select>
             <div class="mt-3 mt-md-auto">
-                <a href="#" class="btn btn-primary"><i class="bi bi-plus"></i> Agregar producto</a>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAgregarProducto"><i class="bi bi-plus"></i> Agregar producto</a>
             </div>
         </div>
 
@@ -109,7 +109,7 @@
                     <td>Tarjetas madre</td>
                     <td>5</td>
                     
-                    <td><a href="#" class="text-green">Editar</a> <a href="#" class="text-danger">Eliminar</a></td>
+                    <td><a href="#" class="text-green" data-bs-toggle="modal" data-bs-target="#modalEditarProducto">Editar</a> <a href="#" class="text-danger" data-bs-toggle="modal" data-bs-target="#confirmarEliminar">Eliminar</a></td>
                 </tr>
                 <tr>
                     <td>2</td>
@@ -121,7 +121,7 @@
                     <td>Tarjetas madre</td>
                     <td>5</td>
                     
-                    <td><a href="#" class="text-green">Editar</a> <a href="#" class="text-danger">Eliminar</a></td>
+                    <td><a href="#" class="text-green " data-bs-toggle="modal" data-bs-target="#modalEditarProducto">Editar</a> <a href="#" class="text-danger" data-bs-toggle="modal" data-bs-target="#confirmarEliminar">Eliminar</a></td>
                 </tr>
                 
                 <!-- Más filas -->
@@ -130,6 +130,133 @@
     </div>
     </main>
 </div>
+
+
+<div class="modal fade" id="modalAgregarProducto" tabindex="-1" aria-labelledby="modalAgregarProductoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalAgregarProductoLabel">Agregar Producto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Nombre del producto</label>
+            <input type="text" class="form-control" placeholder="Ej: Tarjeta Madre Asus">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Precio por unidad ($)</label>
+            <input type="number" class="form-control" placeholder="Ej: 200">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Imagen del producto</label>
+            <input type="file" class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Cantidad en stock</label>
+            <input type="number" class="form-control" placeholder="Ej: 10">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Categoría</label>
+            <select class="form-select">
+              <option selected disabled>Seleccione una categoría</option>
+              <option value="usb">Memorias USB</option>
+              <option value="motherboard">Tarjetas Madre</option>
+              <option value="ram">Memoria RAM</option>
+              <option value="hdd">Discos Duros</option>
+              <option value="otros">Otros</option>
+            </select>
+          </div>
+
+          <div class="text-end">
+            <button type="submit" class="btn btn-primary">Agregar producto</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalEditarProducto" tabindex="-1" aria-labelledby="modalEditarProductoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalEditarProductoLabel">Editar Producto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Nombre del producto</label>
+            <input type="text" class="form-control" value="Tarjeta Madre Asus">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Precio por unidad ($)</label>
+            <input type="number" class="form-control" value="200">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Imagen del producto</label>
+            <input type="file" class="form-control">
+            <div class="mt-2 small text-muted">Imagen actual: tarjeta_madre_asus.png</div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Cantidad en stock</label>
+            <input type="number" class="form-control" value="5">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Categoría</label>
+            <select class="form-select">
+              <option value="usb">Memorias USB</option>
+              <option value="motherboard" selected>Tarjetas Madre</option>
+              <option value="ram">Memoria RAM</option>
+              <option value="hdd">Discos Duros</option>
+              <option value="otros">Otros</option>
+            </select>
+          </div>
+
+          <div class="text-end">
+            <button type="submit" class="btn btn-primary">Guardar cambios</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="confirmarEliminar" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLabel">Confirmar eliminación</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        ¿Está seguro que desea eliminar el producto?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-danger">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
