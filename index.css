@@ -75,6 +75,14 @@ html, body {
   overflow-y: auto; /* Para que permita scroll cuando haya más contenido */
 }
 
+.img-thumbnail-fixed {
+    width: 50px;
+    height: 50px;
+    object-fit: cover; /* llena el recuadro manteniendo proporción y recortando el exceso */
+    border-radius: 5px; /* opcional: esquinas un poco redondeadas */
+}
+
+
 /* En pantallas md+ */
 @media (min-width: 768px) {
   .sidebar {
