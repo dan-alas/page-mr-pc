@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editar equipo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        main {
+            overflow-y: auto; /* Scroll solo en el main */
+        }
+    </style>
+</head>
+<body class="vh-100 d-flex flex-column">
+
+<!-- Header fijo -->
+<header class="bg-primary text-white py-2 px-4 d-flex justify-content-between align-items-center">
+    <a>
+        <img src="/img/imagen pc.png" alt="" height="60">
+    </a>
+  <div>Bienvenido: Admin01</div>
+  <button class="btn btn-light btn-sm">Cerrar Sesión</button>
+</header>
+
+<!-- Contenido -->
+<div class="flex-grow-1 d-flex flex-column flex-md-row" style="min-height: 0;">
+    <!-- Sidebar -->
+<section class="d-flex flex-column flex-md-row">
+
+    
+  <div class="sidebar d-flex flex-row flex-md-column p-3 bg-light justify-content-between align-items-center" style="min-width: 95px;">
+    <div class="d-flex flex-row flex-md-column gap-3">
+
+        <a href="/index.html" class="nav-link text-center text-white rounded d-flex flex-column">
+            <i class="bi bi-house-door-fill fs-3"></i>
+            <span class="">Inicio</span>
+        </a>
+
+        <a href="/equipos.html" class="nav-link text-center text-white d-flex flex-column bg-active rounded">
+            <i class="bi bi-laptop fs-3"></i>
+            <span>Equipos</span>
+        </a>
+
+        <a href="/tecnicos.html" class="nav-link text-center text-white d-flex flex-column">
+            <i class="bi bi-person-fill-gear fs-3"></i>
+            <span>Técnicos</span>
+        </a>
+
+        <a href="/usuarios.html" class="nav-link text-center text-white d-flex flex-column">
+            <i class="bi bi-person-circle fs-3"></i>
+            <span>Usuarios</span>
+        </a>
+
+        <a href="/productos.html" class="nav-link text-center text-white d-flex flex-column">
+            <i class="bi bi-box-seam-fill fs-3"></i>
+            <span>Productos</span>
+        </a>
+
+    </div>
+    
+    <div class="ms-md-0 ms-auto mb-md-4 ">
+        <a href="#" class="nav-link text-center text-white d-flex flex-column mb-md-5">
+            <i class="bi bi-box-arrow-left fs-2"></i>
+            
+        </a>
+    </div>
+  </div>
+  </section>
+
+    <!-- Main con scroll -->
+    <main class="flex-grow-1 overflow-auto p-4">
+        <h4 class="text-center mb-4 fw-bold">EDITAR EQUIPO</h4>
+        
+        <div class="text-end mb-3">
+            <div class="mt-3 mt-md-auto">
+                <a href="/equipos.html" class="btn btn-warning text-white"><i class="bi bi-box-arrow-left me-1"></i>Regresar</a>
+            </div>
+        </div>
+
+    <!-- Empieza formulario  -->
+
+        <div>
+            <div class="border p-4 rounded">
+                <h5 class="fw-bold">MISTER PC BOTEO</h5>
+                <p class="mb-4">DETALLE DEL EQUIPO</p>
+
+                <!-- I. Datos del evento -->
+                <h6>I. Datos del evento</h6>
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <label class="form-label">Propietario</label>
+                        <div class="form-control-plaintext">Daniel Alas</div>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Fecha</label>
+                        <div class="form-control-plaintext">2025-06-30</div>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Tipo</label>
+                        <div class="form-control-plaintext">Hardware</div>
+                    </div>
+                </div>
+
+                <!-- II. Datos previos del equipo -->
+                <h6>II. Datos previos del equipo</h6>
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <label class="form-label">Marca</label>
+                        <div class="form-control-plaintext">Dell</div>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Modelo</label>
+                        <div class="form-control-plaintext">Inspiron 15</div>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Nombre de equipo</label>
+                        <div class="form-control-plaintext">PC-OFICINA-01</div>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <h6>MEMORIA RAM</h6>
+                        <label class="form-label">Tipo</label>
+                        <div class="form-control-plaintext">DDR4</div>
+                        <label class="form-label">Capacidad</label>
+                        <div class="form-control-plaintext">8 GB</div>
+                        <label class="form-label">Slot vacíos</label>
+                        <div class="form-control-plaintext">1</div>
+                    </div>
+                    <div class="col-md-4">
+                        <h6>PROCESADOR</h6>
+                        <label class="form-label">Marca</label>
+                        <div class="form-control-plaintext">Intel</div>
+                        <label class="form-label">Velocidad</label>
+                        <div class="form-control-plaintext">2.5 GHz</div>
+                    </div>
+                    <div class="col-md-4">
+                        <h6>SISTEMA OPERATIVO</h6>
+                        <label class="form-label">Nombre</label>
+                        <div class="form-control-plaintext">Windows</div>
+                        <label class="form-label">Versión</label>
+                        <div class="form-control-plaintext">10</div>
+                        <label class="form-label">Arquitectura</label>
+                        <div class="form-control-plaintext">64 bits</div>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <h6>DISCO DURO</h6>
+                        <label class="form-label">Capacidad</label>
+                        <div class="form-control-plaintext">1 TB</div>
+                        <label class="form-label">Particiones</label>
+                        <div class="form-control-plaintext">C:, D:</div>
+                    </div>
+                    <div class="col-md-4">
+                        <h6>TARJETA MADRE</h6>
+                        <label class="form-label">Capacidad</label>
+                        <div class="form-control-plaintext">32 GB máx RAM</div>
+                        <label class="form-label">Particiones</label>
+                        <div class="form-control-plaintext">N/A</div>
+                    </div>
+                    <div class="col-md-4">
+                        <h6>PUERTOS</h6>
+                        <label class="form-label">Puertos</label>
+                        <div class="form-control-plaintext">USB 3.0, HDMI, RJ45</div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <h6>OTRA INFORMACIÓN</h6>
+                    <label class="form-label">Información</label>
+                    <div class="form-control-plaintext">Equipo en buenas condiciones generales.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Responsable del mantenimiento</label>
+                    <div class="form-control-plaintext">Daniel Alas</div>
+                </div>
+
+                <div class="text-end">
+                    <a href="/equipos.html" class="btn btn-secondary">Regresar</a>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
