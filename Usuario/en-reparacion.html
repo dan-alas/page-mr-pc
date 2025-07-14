@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tecnico - Inicio</title>
+    <title>Usuario - Inicio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../index.css">
@@ -13,7 +13,7 @@
 
 <header class="bg-primary text-white py-2 px-4 d-flex justify-content-between align-items-center">
   <a><img src="/img/imagen pc.png" alt="" height="60"></a>
-  <div>Bienvenido: Tecnico</div>
+  <div>Bienvenido: Daniel Alas</div>
   <button class="btn btn-light btn-sm">Cerrar Sesión</button>
 </header>
 
@@ -27,19 +27,14 @@
             <span class="">Inicio</span>
         </a>
 
-        <a href="./equipos.html" class="nav-link text-center text-white d-flex flex-column">
+        <a href="./en-reparacion.html" class="nav-link text-center text-white d-flex flex-column">
             <i class="bi bi-laptop fs-3"></i>
-            <span>Equipos<br>Asignados</span>
+            <span>En<br>Reparacion</span>
         </a>
 
-        <a href="./usuarios.html" class="nav-link text-center text-white d-flex flex-column">
+        <a href="./reparados.html" class="nav-link text-center text-white d-flex flex-column">
             <i class="bi bi-person-circle fs-3"></i>
-            <span>Usuarios</span>
-        </a>
-
-        <a href="./productos.html" class="nav-link text-center text-white d-flex flex-column">
-            <i class="bi bi-box-seam-fill fs-3"></i>
-            <span>Productos</span>
+            <span>Reparados</span>
         </a>
 
     </div>
@@ -54,38 +49,41 @@
 
   <!-- Main content -->
   <main class="flex-grow-1">
-    <section class="container">
-      <div>
-          <h4 class="text-center mt-4 mb-5 fw-bold">PANEL DE TECNICO</h4>
-      </div>
-      
-      <div class="row align-items-center justify-content-center gy-4">
-        <div class="col-md-5">
-          <div class="bg-yellow rounded p-4 text-center text-white">
-            <h5 class="fw-bold">Equipos Asignados</h5>
-            <p class="number-size mb-4">2</p>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <div class="bg-pink rounded p-4 text-center text-white">
-            <h5 class="fw-bold">Equipos Terminados</h5>
-            <p class="number-size mb-4">0</p>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <div class="bg-green rounded p-4 text-center text-white">
-            <h5 class="fw-bold">Equipos Reparados</h5>
-            <p class="number-size mb-4">2</p>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <div class="bg-light-blue rounded p-4 text-center text-white">
-            <h5 class="fw-bold">Productos</h5>
-            <p class="number-size mb-4">2</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <h4 class="text-center mb-3 fw-bold">EQUIPOS EN REPARACION</h4>
+    <div class="text-md-end mb-3">
+        <a href="#" class="btn btn-warning text-white">Solicitar reparacion</a>
+    </div>
+
+    <div class="table-responsive">
+      <table class="table table-striped">
+
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre de Equipo</th>
+                    <th>Marca</th>
+                    <th>Fecha</th>
+                    <th>Técnico</th>
+                    <th>Tipo</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><a href="#">PC-DANIEL</a></td>
+                    <td>Asus Vivobook</td>
+                    <td>06/07/2024</td>
+                    <td>Cesar Ramirez</td>
+                    <td>Software</td>
+                    <td>En proceso</td>
+                </tr>
+                <!-- Más filas aquí -->
+            </tbody>
+
+      </table>
+    </div>
   </main>
 </section>
 
