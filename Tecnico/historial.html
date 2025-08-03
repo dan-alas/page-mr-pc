@@ -1,110 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Historial equipos  - Tec</title>
+    <title>Historial equipos - Tec</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../index.css">
     <style>
         main {
-            overflow-y: auto; /* Scroll solo en el main */
+            overflow-y: auto;
+            /* Scroll solo en el main */
         }
     </style>
 </head>
+
 <body class="vh-100 d-flex flex-column">
 
-<!-- Header fijo -->
-<header class="bg-primary text-white py-2 px-4 d-flex justify-content-between align-items-center">
-    <a>
-        <img src="/img/imagen pc.png" alt="" height="60">
-    </a>
-  <div>Bienvenido: Tecnico</div>
-  <button class="btn btn-light btn-sm">Cerrar Sesión</button>
-</header>
-
-<!-- Contenido -->
-<div class="flex-grow-1 d-flex flex-column flex-md-row" style="min-height: 0;">
-    <!-- Sidebar -->
-<section class="d-flex flex-column flex-md-row">
-
-  <div class="sidebar d-flex flex-row flex-md-column p-3 bg-light justify-content-between align-items-center" style="min-width: 95px;">
-    <div class="d-flex flex-row flex-md-column gap-3">
-
-        <a href="./index.html" class="nav-link text-center text-white d-flex flex-column">
-            <i class="bi bi-house-door-fill fs-3"></i>
-            <span class="">Inicio</span>
+    <!-- Header fijo -->
+    <header class="bg-primary text-white py-2 px-4 d-flex justify-content-between align-items-center">
+        <a>
+            <img src="/img/imagen pc.png" alt="" height="60">
         </a>
+        <div>Bienvenido: Tecnico</div>
+        <button class="btn btn-light btn-sm">Cerrar Sesión</button>
+    </header>
 
-        <a href="./equipos.html" class="nav-link text-center text-white d-flex flex-column bg-active rounded">
-            <i class="bi bi-laptop fs-3"></i>
-            <span>Equipos<br>Asignados</span>
-        </a>
+    <!-- Contenido -->
+    <div class="flex-grow-1 d-flex flex-column flex-md-row" style="min-height: 0;">
+        <!-- Sidebar -->
+        <section class="d-flex flex-column flex-md-row">
 
-        <a href="./usuarios.html" class="nav-link text-center text-white d-flex flex-column">
-            <i class="bi bi-person-circle fs-3"></i>
-            <span>Usuarios</span>
-        </a>
+            <div class="sidebar d-flex flex-row flex-md-column p-3 bg-light justify-content-between align-items-center"
+                style="min-width: 95px;">
+                <div class="d-flex flex-row flex-md-column gap-3">
 
-        <a href="./productos.html" class="nav-link text-center text-white d-flex flex-column">
-            <i class="bi bi-box-seam-fill fs-3"></i>
-            <span>Productos</span>
-        </a>
+                    <a href="./index.html" class="nav-link text-center text-white d-flex flex-column">
+                        <i class="bi bi-house-door-fill fs-3"></i>
+                        <span class="">Inicio</span>
+                    </a>
 
-    </div>
-  </section>
+                    <a href="./equipos.html"
+                        class="nav-link text-center text-white d-flex flex-column bg-active rounded">
+                        <i class="bi bi-laptop fs-3"></i>
+                        <span>Equipos<br>Asignados</span>
+                    </a>
 
-    <!-- Main con scroll -->
-    <main class="flex-grow-1 overflow-auto p-4">
-        <h4 class="text-center mb-4 fw-bold">HISTORIAL EQUIPOS REPARADOS</h4>
-        
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
-            <select class="form-select w-auto">
-                <option>Filtrar por tipo</option>
-                <option>Software</option>
-                <option>Hardware</option>
-            </select>
-            <div class="mt-3 mt-md-auto">
-                <a href="./equipos.html" class="btn btn-warning text-white"><i class="bi bi-box-arrow-left me-1"></i>Regresar</a>
+                    <a href="./usuarios.html" class="nav-link text-center text-white d-flex flex-column">
+                        <i class="bi bi-person-circle fs-3"></i>
+                        <span>Usuarios</span>
+                    </a>
+
+                    <a href="./productos.html" class="nav-link text-center text-white d-flex flex-column">
+                        <i class="bi bi-box-seam-fill fs-3"></i>
+                        <span>Productos</span>
+                    </a>
+
+                </div>
+        </section>
+
+        <!-- Main con scroll -->
+        <main class="flex-grow-1 overflow-auto p-4">
+            <h4 class="text-center mb-4 fw-bold">HISTORIAL EQUIPOS REPARADOS</h4>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+                <select class="form-select w-auto">
+                    <option>Filtrar por tipo</option>
+                    <option>Software</option>
+                    <option>Hardware</option>
+                </select>
+                <div class="mt-3 mt-md-auto">
+                    <a href="./equipos.html" class="btn btn-warning text-white"><i
+                            class="bi bi-box-arrow-left me-1"></i>Regresar</a>
+                </div>
             </div>
-        </div>
 
-        <div class="table-responsive">
-    <table class="table table-striped">
-            <thead class="table-dark">
-                <tr>
-                    <th>ID</th>
-                    <th>Nombre de Equipo</th>
-                    <th>Propietario</th>
-                    <th>Marca</th>
-                    <th>Fecha</th>
-                    <th>Fecha de Entrega</th>
-                    <th>Técnico</th>
-                    <th>Tipo</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>PC-DANIEL</td>
-                    <td>Daniel Alas</td>
-                    <td>Asus Vivobook</td>
-                    <td>06/07/2024</td>
-                    <td>06/09/2024</td>
-                    <td>Mr Boteo</td>
-                    <td>Software</td>
-                    <td><a href="#" class="text-green">Descargar PDF</a></td>
-                </tr>
-                
-                <!-- Más filas -->
-            </tbody>
-        </table>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre de Equipo</th>
+                            <th>Propietario</th>
+                            <th>Marca</th>
+                            <th>Fecha</th>
+                            <th>Fecha de Entrega</th>
+                            <th>Técnico</th>
+                            <th>Tipo</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>PC-DANIEL</td>
+                            <td>Daniel Alas</td>
+                            <td>Asus Vivobook</td>
+                            <td>06/07/2024</td>
+                            <td>06/09/2024</td>
+                            <td>Mr Boteo</td>
+                            <td>Software</td>
+                            <td><a href="#" class="text-green">Descargar PDF</a></td>
+                        </tr>
+
+                        <!-- Más filas -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
     </div>
-    </main>
-</div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

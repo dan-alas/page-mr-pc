@@ -1,99 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin - Inicio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/index.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Inicio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/index.css">
+
 </head>
+
 <body>
 
-<header class="bg-primary text-white py-2 px-4 d-flex justify-content-between align-items-center">
-  <a><img src="/img/imagen pc.png" alt="" height="60"></a>
-  <div>Bienvenido: Admin01</div>
-  <button class="btn btn-light btn-sm">Cerrar Sesión</button>
-</header>
+  <header class="bg-primary text-white py-2 px-4 d-flex justify-content-between align-items-center">
+    <a><img src="/img/imagen pc.png" alt="" height="60"></a>
+    <div>Bienvenido: Admin01</div>
+    <button class="btn btn-light btn-sm">Cerrar Sesión</button>
+  </header>
 
-<section class="d-flex flex-column flex-md-row">
-  <!-- Sidebar -->
-  <div class="sidebar d-flex flex-row flex-md-column p-3 bg-light justify-content-between align-items-center" style="min-width: 95px;">
-    <div class="d-flex flex-row flex-md-column gap-3">
+  <section class="d-flex flex-column flex-md-row">
+    <!-- Sidebar -->
+    <div class="sidebar d-flex flex-row flex-md-column p-3 bg-light justify-content-between align-items-center"
+      style="min-width: 95px;">
+      <div class="d-flex flex-row flex-md-column gap-3">
 
         <a href="/index.html" class="nav-link text-center text-white bg-active rounded d-flex flex-column">
-            <i class="bi bi-house-door-fill fs-3"></i>
-            <span class="">Inicio</span>
+          <i class="bi bi-house-door-fill fs-3"></i>
+          <span class="">Inicio</span>
         </a>
 
         <a href="/equipos.html" class="nav-link text-center text-white d-flex flex-column">
-            <i class="bi bi-laptop fs-3"></i>
-            <span>Equipos</span>
+          <i class="bi bi-laptop fs-3"></i>
+          <span>Equipos</span>
         </a>
 
         <a href="/tecnicos.html" class="nav-link text-center text-white d-flex flex-column">
-            <i class="bi bi-person-fill-gear fs-3"></i>
-            <span>Técnicos</span>
+          <i class="bi bi-person-fill-gear fs-3"></i>
+          <span>Técnicos</span>
         </a>
 
         <a href="/usuarios.html" class="nav-link text-center text-white d-flex flex-column">
-            <i class="bi bi-person-circle fs-3"></i>
-            <span>Usuarios</span>
+          <i class="bi bi-person-circle fs-3"></i>
+          <span>Usuarios</span>
         </a>
 
         <a href="/productos.html" class="nav-link text-center text-white d-flex flex-column">
-            <i class="bi bi-box-seam-fill fs-3"></i>
-            <span>Productos</span>
+          <i class="bi bi-box-seam-fill fs-3"></i>
+          <span>Productos</span>
         </a>
 
-    </div>
-    
-    <div class="ms-md-0 ms-auto mb-md-4 ">
+      </div>
+
+      <div class="ms-md-0 ms-auto mb-md-4 ">
         <a href="#" class="nav-link text-center text-white d-flex flex-column mb-md-5">
-            <i class="bi bi-box-arrow-left fs-2"></i>
-            
+          <i class="bi bi-box-arrow-left fs-2"></i>
+
         </a>
+      </div>
     </div>
-  </div>
 
-  <!-- Main content -->
-  <main class="flex-grow-1">
-    <section class="container">
-      <div>
+    <!-- Main content -->
+    <main class="flex-grow-1">
+      <section class="container">
+        <div>
           <h4 class="text-center mt-4 mb-5 fw-bold">PANEL DE ADMINISTRACIÓN</h4>
-      </div>
-      
-      <div class="row align-items-center justify-content-center gy-4">
-        <div class="col-md-5">
-          <div class="bg-yellow rounded p-4 text-center text-white">
-            <h5 class="fw-bold">Equipos en reparación</h5>
-            <p class="number-size mb-4">2</p>
-          </div>
         </div>
-        <div class="col-md-5">
-          <div class="bg-pink rounded p-4 text-center text-white">
-            <h5 class="fw-bold">Productos disponibles</h5>
-            <p class="number-size mb-4">0</p>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <div class="bg-green rounded p-4 text-center text-white">
-            <h5 class="fw-bold">Técnicos disponibles</h5>
-            <p class="number-size mb-4">2</p>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <div class="bg-light-blue rounded p-4 text-center text-white">
-            <h5 class="fw-bold">Clientes registrados</h5>
-            <p class="number-size mb-4">2</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-</section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+        <div class="row align-items-center justify-content-center gy-4">
+          <div class="col-md-5">
+            <div class="bg-yellow rounded p-4 text-center text-white">
+              <h5 class="fw-bold">Equipos en reparación</h5>
+              <p class="number-size mb-4">2</p>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="bg-pink rounded p-4 text-center text-white">
+              <h5 class="fw-bold">Productos disponibles</h5>
+              <p class="number-size mb-4">0</p>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="bg-green rounded p-4 text-center text-white">
+              <h5 class="fw-bold">Técnicos disponibles</h5>
+              <p class="number-size mb-4">2</p>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="bg-light-blue rounded p-4 text-center text-white">
+              <h5 class="fw-bold">Clientes registrados</h5>
+              <p class="number-size mb-4">2</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

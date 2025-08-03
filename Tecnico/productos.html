@@ -1,243 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Productos - Tec</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="../index.css">
-    <style>
-        main {
-            overflow-y: auto; /* Scroll solo en el main */
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Productos - Tec</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../index.css">
+  <style>
+    main {
+      overflow-y: auto;
+      /* Scroll solo en el main */
+    }
+  </style>
 </head>
+
 <body class="vh-100 d-flex flex-column">
 
-<!-- Header fijo -->
-<header class="bg-primary text-white py-2 px-4 d-flex justify-content-between align-items-center">
+  <!-- Header fijo -->
+  <header class="bg-primary text-white py-2 px-4 d-flex justify-content-between align-items-center">
     <a>
-        <img src="/img/imagen pc.png" alt="" height="60">
+      <img src="/img/imagen pc.png" alt="" height="60">
     </a>
-  <div>Bienvenido: Tecnico</div>
-  <button class="btn btn-light btn-sm">Cerrar Sesión</button>
-</header>
+    <div>Bienvenido: Tecnico</div>
+    <button class="btn btn-light btn-sm">Cerrar Sesión</button>
+  </header>
 
-<!-- Contenido -->
-<div class="flex-grow-1 d-flex flex-column flex-md-row" style="min-height: 0;">
+  <!-- Contenido -->
+  <div class="flex-grow-1 d-flex flex-column flex-md-row" style="min-height: 0;">
     <!-- Sidebar -->
-  <section class="d-flex flex-column flex-md-row">
+    <section class="d-flex flex-column flex-md-row">
 
-    <div class="sidebar d-flex flex-row flex-md-column p-3 bg-light justify-content-between align-items-center" style="min-width: 95px;">
-    <div class="d-flex flex-row flex-md-column gap-3">
+      <div class="sidebar d-flex flex-row flex-md-column p-3 bg-light justify-content-between align-items-center"
+        style="min-width: 95px;">
+        <div class="d-flex flex-row flex-md-column gap-3">
 
-        <a href="./index.html" class="nav-link text-center text-white d-flex flex-column">
+          <a href="./index.html" class="nav-link text-center text-white d-flex flex-column">
             <i class="bi bi-house-door-fill fs-3"></i>
             <span class="">Inicio</span>
-        </a>
+          </a>
 
-        <a href="./equipos.html" class="nav-link text-center text-white d-flex flex-column">
+          <a href="./equipos.html" class="nav-link text-center text-white d-flex flex-column">
             <i class="bi bi-laptop fs-3"></i>
             <span>Equipos<br>Asignados</span>
-        </a>
+          </a>
 
-        <a href="./usuarios.html" class="nav-link text-center text-white d-flex flex-column">
+          <a href="./usuarios.html" class="nav-link text-center text-white d-flex flex-column">
             <i class="bi bi-person-circle fs-3"></i>
             <span>Usuarios</span>
-        </a>
+          </a>
 
-        <a href="./productos.html" class="nav-link text-center text-white d-flex flex-column bg-active rounded">
+          <a href="./productos.html" class="nav-link text-center text-white d-flex flex-column bg-active rounded">
             <i class="bi bi-box-seam-fill fs-3"></i>
             <span>Productos</span>
-        </a>
+          </a>
 
-    </div>
-  </section>
+        </div>
+    </section>
 
     <!-- Main con scroll -->
-  <main class="flex-grow-1 overflow-auto p-4">
-        <h4 class="text-center mb-4 fw-bold">NUESTROS PRODUCTOS</h4>
-        
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
-            <select class="form-select w-auto">
-                <option>Filtrar por categoria</option>
-                <option>Memorias</option>
-                <option>Tarjetas madre</option>
-            </select>
+    <main class="flex-grow-1 overflow-auto p-4">
+      <h4 class="text-center mb-4 fw-bold">NUESTROS PRODUCTOS</h4>
+
+      <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+        <select class="form-select w-auto">
+          <option>Filtrar por categoria</option>
+          <option>Memorias</option>
+          <option>Tarjetas madre</option>
+        </select>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead class="table-dark">
+            <tr>
+              <th>ID</th>
+              <th>Imagen</th>
+              <th>Nombre de producto</th>
+              <th>Precio</th>
+              <th>Categoria</th>
+              <th>En Stock</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>
+                <img src="img/imagen pc.png" class="img-thumbnail-fixed" alt="Producto">
+              </td>
+              <td>Tarjeta Madre Asus</td>
+              <td><span>$</span>200</td>
+              <td>Tarjetas madre</td>
+              <td>5</td>
+
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                <img src="img/imagen pc.png" class="img-thumbnail-fixed" alt="Producto">
+              </td>
+              <td>Tarjeta Madre Asus</td>
+              <td><span>$</span>200</td>
+              <td>Tarjetas madre</td>
+              <td>5</td>
+
+            </tr>
+
+            <!-- Más filas -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+
+  <div class="modal fade" id="modalAgregarProducto" tabindex="-1" aria-labelledby="modalAgregarProductoLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalAgregarProductoLabel">Agregar Producto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
         </div>
 
-        <div class="table-responsive">
-    <table class="table table-striped">
-            <thead class="table-dark">
-                <tr>
-                    <th>ID</th>
-                    <th>Imagen</th>
-                    <th>Nombre de producto</th>
-                    <th>Precio</th>
-                    <th>Categoria</th>
-                    <th>En Stock</th>
-                    
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>
-                        <img src="img/imagen pc.png" class="img-thumbnail-fixed" alt="Producto">
-                    </td>
-                    <td>Tarjeta Madre Asus</td>
-                    <td><span>$</span>200</td>
-                    <td>Tarjetas madre</td>
-                    <td>5</td>
-                    
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>
-                        <img src="img/imagen pc.png" class="img-thumbnail-fixed" alt="Producto">
-                    </td>
-                    <td>Tarjeta Madre Asus</td>
-                    <td><span>$</span>200</td>
-                    <td>Tarjetas madre</td>
-                    <td>5</td>
-                   
-                </tr>
-                
-                <!-- Más filas -->
-            </tbody>
-        </table>
-    </div>
-    </main>
-</div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Nombre del producto</label>
+              <input type="text" class="form-control" placeholder="Ej: Tarjeta Madre Asus">
+            </div>
 
+            <div class="mb-3">
+              <label class="form-label">Precio por unidad ($)</label>
+              <input type="number" class="form-control" placeholder="Ej: 200">
+            </div>
 
-<div class="modal fade" id="modalAgregarProducto" tabindex="-1" aria-labelledby="modalAgregarProductoLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalAgregarProductoLabel">Agregar Producto</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-      </div>
-      
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label class="form-label">Nombre del producto</label>
-            <input type="text" class="form-control" placeholder="Ej: Tarjeta Madre Asus">
-          </div>
+            <div class="mb-3">
+              <label class="form-label">Imagen del producto</label>
+              <input type="file" class="form-control">
+            </div>
 
-          <div class="mb-3">
-            <label class="form-label">Precio por unidad ($)</label>
-            <input type="number" class="form-control" placeholder="Ej: 200">
-          </div>
+            <div class="mb-3">
+              <label class="form-label">Cantidad en stock</label>
+              <input type="number" class="form-control" placeholder="Ej: 10">
+            </div>
 
-          <div class="mb-3">
-            <label class="form-label">Imagen del producto</label>
-            <input type="file" class="form-control">
-          </div>
+            <div class="mb-3">
+              <label class="form-label">Categoría</label>
+              <select class="form-select">
+                <option selected disabled>Seleccione una categoría</option>
+                <option value="usb">Memorias USB</option>
+                <option value="motherboard">Tarjetas Madre</option>
+                <option value="ram">Memoria RAM</option>
+                <option value="hdd">Discos Duros</option>
+                <option value="otros">Otros</option>
+              </select>
+            </div>
 
-          <div class="mb-3">
-            <label class="form-label">Cantidad en stock</label>
-            <input type="number" class="form-control" placeholder="Ej: 10">
-          </div>
+            <div class="text-end">
+              <button type="submit" class="btn btn-primary">Agregar producto</button>
+            </div>
+          </form>
+        </div>
 
-          <div class="mb-3">
-            <label class="form-label">Categoría</label>
-            <select class="form-select">
-              <option selected disabled>Seleccione una categoría</option>
-              <option value="usb">Memorias USB</option>
-              <option value="motherboard">Tarjetas Madre</option>
-              <option value="ram">Memoria RAM</option>
-              <option value="hdd">Discos Duros</option>
-              <option value="otros">Otros</option>
-            </select>
-          </div>
-
-          <div class="text-end">
-            <button type="submit" class="btn btn-primary">Agregar producto</button>
-          </div>
-        </form>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="modalEditarProducto" tabindex="-1" aria-labelledby="modalEditarProductoLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalEditarProductoLabel">Editar Producto</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-      </div>
-      
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label class="form-label">Nombre del producto</label>
-            <input type="text" class="form-control" value="Tarjeta Madre Asus">
-          </div>
-
-          <div class="mb-3">
-            <label class="form-label">Precio por unidad ($)</label>
-            <input type="number" class="form-control" value="200">
-          </div>
-
-          <div class="mb-3">
-            <label class="form-label">Imagen del producto</label>
-            <input type="file" class="form-control">
-            <div class="mt-2 small text-muted">Imagen actual: tarjeta_madre_asus.png</div>
-          </div>
-
-          <div class="mb-3">
-            <label class="form-label">Cantidad en stock</label>
-            <input type="number" class="form-control" value="5">
-          </div>
-
-          <div class="mb-3">
-            <label class="form-label">Categoría</label>
-            <select class="form-select">
-              <option value="usb">Memorias USB</option>
-              <option value="motherboard" selected>Tarjetas Madre</option>
-              <option value="ram">Memoria RAM</option>
-              <option value="hdd">Discos Duros</option>
-              <option value="otros">Otros</option>
-            </select>
-          </div>
-
-          <div class="text-end">
-            <button type="submit" class="btn btn-primary">Guardar cambios</button>
-          </div>
-        </form>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="confirmarEliminar" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalLabel">Confirmar eliminación</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-      </div>
-      <div class="modal-body">
-        ¿Está seguro que desea eliminar el producto?
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-        <button type="button" class="btn btn-danger">Eliminar</button>
       </div>
     </div>
   </div>
-</div>
+
+  <div class="modal fade" id="modalEditarProducto" tabindex="-1" aria-labelledby="modalEditarProductoLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalEditarProductoLabel">Editar Producto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Nombre del producto</label>
+              <input type="text" class="form-control" value="Tarjeta Madre Asus">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Precio por unidad ($)</label>
+              <input type="number" class="form-control" value="200">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Imagen del producto</label>
+              <input type="file" class="form-control">
+              <div class="mt-2 small text-muted">Imagen actual: tarjeta_madre_asus.png</div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Cantidad en stock</label>
+              <input type="number" class="form-control" value="5">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Categoría</label>
+              <select class="form-select">
+                <option value="usb">Memorias USB</option>
+                <option value="motherboard" selected>Tarjetas Madre</option>
+                <option value="ram">Memoria RAM</option>
+                <option value="hdd">Discos Duros</option>
+                <option value="otros">Otros</option>
+              </select>
+            </div>
+
+            <div class="text-end">
+              <button type="submit" class="btn btn-primary">Guardar cambios</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="confirmarEliminar" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel">Confirmar eliminación</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          ¿Está seguro que desea eliminar el producto?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-danger">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
