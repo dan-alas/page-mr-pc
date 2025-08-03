@@ -96,7 +96,7 @@ El sistema gestiona tres tipos de roles con permisos específicos:
 En desarrollo. Se están incorporando mejoras como:
 
 - Soporte para productos por unidad y por caja.
--Implementación de funcionalidad backend con  MySQL.
+- Implementación de funcionalidad backend con  MySQL.
 - Mejora de la interfaz móvil.
 
 ---
