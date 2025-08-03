@@ -61,7 +61,7 @@
 
     <!-- Main con scroll -->
     <main class="flex-grow-1 overflow-auto p-4">
-      <h4 class="text-center mb-4 fw-bold">NUESTROS PRODUCTOS</h4>
+      <h4 class="text-center mb-4 fw-bold">PRODUCTOS Y REPUESTOS DISPONIBLES</h4>
 
       <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
         <select class="form-select w-auto">
@@ -79,9 +79,10 @@
               <th>Imagen</th>
               <th>Nombre de producto</th>
               <th>Precio</th>
-              <th>Categoria</th>
-              <th>En Stock</th>
-
+              <th>Categoría</th>
+              <th>Stock</th>
+              <th>Presentación</th>
+             
             </tr>
           </thead>
           <tbody>
@@ -94,21 +95,43 @@
               <td><span>$</span>200</td>
               <td>Tarjetas madre</td>
               <td>5</td>
-
+              <td>
+                <span class="badge bg-secondary">Unidad</span>
+              </td>
+              
             </tr>
+
             <tr>
               <td>2</td>
               <td>
-                <img src="img/imagen pc.png" class="img-thumbnail-fixed" alt="Producto">
+                <img src="img/caja_clavos.png" class="img-thumbnail-fixed" alt="Producto">
               </td>
-              <td>Tarjeta Madre Asus</td>
-              <td><span>$</span>200</td>
-              <td>Tarjetas madre</td>
-              <td>5</td>
-
+              <td>Caja de clavos</td>
+              <td><span>$</span>8</td>
+              <td>Ferretería</td>
+              <td>10</td>
+              <td>
+                <span class="badge bg-info text-dark">Caja</span><br>
+                <small class="text-muted">100 unidades por caja</small>
+              </td>
+              
             </tr>
 
-            <!-- Más filas -->
+            <tr>
+              <td>3</td>
+              <td>
+                <img src="img/rollo_papel.png" class="img-thumbnail-fixed" alt="Producto">
+              </td>
+              <td>Cartón de papel</td>
+              <td><span>$</span>15</td>
+              <td>Oficina</td>
+              <td>5</td>
+              <td>
+                <span class="badge bg-info text-dark">Caja</span><br>
+                <small class="text-muted">Unidades desconocidas</small>
+              </td>
+              
+            </tr>
           </tbody>
         </table>
       </div>

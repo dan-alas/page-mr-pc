@@ -7,7 +7,7 @@
     <title>Editar equipo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../index.css">
     <style>
         main {
             overflow-y: auto;
@@ -23,7 +23,7 @@
         <a>
             <img src="/img/imagen pc.png" alt="" height="60">
         </a>
-        <div>Bienvenido: Admin01</div>
+        <div>Bienvenido: tecnico</div>
         <button class="btn btn-light btn-sm">Cerrar Sesión</button>
     </header>
 
@@ -71,7 +71,7 @@
 
         <!-- Main con scroll -->
         <main class="flex-grow-1 overflow-auto p-4">
-            <h4 class="text-center mb-4 fw-bold">EDITAR EQUIPO</h4>
+            <h4 class="text-center mb-4 fw-bold">VER INFORMACIÓN DE EQUIPO</h4>
 
             <div class="text-end mb-3">
                 <div class="mt-3 mt-md-auto">
@@ -89,35 +89,45 @@
                     <p class="mb-4">DETALLE DEL EQUIPO</p>
 
                     <!-- I. Datos del evento -->
-                    <h6>I. Datos del evento</h6>
+                    <h6>I. Datos Generales</h6>
                     <div class="row mb-3">
                         <div class="col-md-4">
-                            <label class="form-label">Propietario</label>
+                            <label class="form-label fw-semibold">Propietario:</label>
                             <div class="form-control-plaintext">Daniel Alas</div>
                         </div>
                         <div class="col-md-4">
-                            <label class="form-label">Fecha</label>
+                            <label class="form-label fw-semibold">Fecha de ingreso:</label>
                             <div class="form-control-plaintext">2025-06-30</div>
                         </div>
                         <div class="col-md-4">
-                            <label class="form-label">Tipo</label>
+                            <label class="form-label fw-semibold">Tipo de problema:</label>
                             <div class="form-control-plaintext">Hardware</div>
+                        </div>
+
+                         <div class="col-md-4 mt-3">
+                            <label class="form-label fw-semibold">Estado del equipo:</label>
+                            <div class="form-control-plaintext">En reparación</div>
+                        </div>
+
+                         <div class="col-md-4 mt-3">
+                            <label class="form-label fw-semibold">Tecnico Responsable:</label>
+                            <div class="form-control-plaintext">Daniel Alas</div>
                         </div>
                     </div>
 
                     <!-- II. Datos previos del equipo -->
-                    <h6>II. Datos previos del equipo</h6>
+                    <h6 class="mt-5">II. Datos previos del equipo</h6>
                     <div class="row mb-3">
                         <div class="col-md-4">
-                            <label class="form-label">Marca</label>
+                            <label class="form-label fw-semibold">Marca:</label>
                             <div class="form-control-plaintext">Dell</div>
                         </div>
                         <div class="col-md-4">
-                            <label class="form-label">Modelo</label>
+                            <label class="form-label fw-semibold">Modelo:</label>
                             <div class="form-control-plaintext">Inspiron 15</div>
                         </div>
                         <div class="col-md-4">
-                            <label class="form-label">Nombre de equipo</label>
+                            <label class="form-labe fw-semibold">Nombre de equipo:</label>
                             <div class="form-control-plaintext">PC-OFICINA-01</div>
                         </div>
                     </div>
@@ -125,27 +135,27 @@
                     <div class="row mb-3">
                         <div class="col-md-4">
                             <h6>MEMORIA RAM</h6>
-                            <label class="form-label">Tipo</label>
+                            <label class="form-label fw-semibold">Tipo:</label>
                             <div class="form-control-plaintext">DDR4</div>
-                            <label class="form-label">Capacidad</label>
+                            <label class="form-label fw-semibold">Capacidad:</label>
                             <div class="form-control-plaintext">8 GB</div>
-                            <label class="form-label">Slot vacíos</label>
+                            <label class="form-label fw-semibold">Slot vacíos:</label>
                             <div class="form-control-plaintext">1</div>
                         </div>
                         <div class="col-md-4">
                             <h6>PROCESADOR</h6>
-                            <label class="form-label">Marca</label>
+                            <label class="form-label fw-semibold">Marca:</label>
                             <div class="form-control-plaintext">Intel</div>
-                            <label class="form-label">Velocidad</label>
+                            <label class="form-label fw-semibold">Velocidad:</label>
                             <div class="form-control-plaintext">2.5 GHz</div>
                         </div>
                         <div class="col-md-4">
                             <h6>SISTEMA OPERATIVO</h6>
-                            <label class="form-label">Nombre</label>
+                            <label class="form-label fw-semibold">Nombre:</label>
                             <div class="form-control-plaintext">Windows</div>
-                            <label class="form-label">Versión</label>
+                            <label class="form-label fw-semibold">Versión:</label>
                             <div class="form-control-plaintext">10</div>
-                            <label class="form-label">Arquitectura</label>
+                            <label class="form-label fw-semibold">Arquitectura:</label>
                             <div class="form-control-plaintext">64 bits</div>
                         </div>
                     </div>
@@ -153,38 +163,32 @@
                     <div class="row mb-3">
                         <div class="col-md-4">
                             <h6>DISCO DURO</h6>
-                            <label class="form-label">Capacidad</label>
+                            <label class="form-label fw-semibold">Capacidad:</label>
                             <div class="form-control-plaintext">1 TB</div>
-                            <label class="form-label">Particiones</label>
-                            <div class="form-control-plaintext">C:, D:</div>
+                            <label class="form-label fw-semibold"># Particiones:</label>
+                            <div class="form-control-plaintext">6</div>
                         </div>
                         <div class="col-md-4">
                             <h6>TARJETA MADRE</h6>
-                            <label class="form-label">Capacidad</label>
-                            <div class="form-control-plaintext">32 GB máx RAM</div>
-                            <label class="form-label">Particiones</label>
-                            <div class="form-control-plaintext">N/A</div>
+                            <label class="form-label fw-semibold">Modelo:</label>
+                            <div class="form-control-plaintext">Asus</div>
+                            
                         </div>
                         <div class="col-md-4">
                             <h6>PUERTOS</h6>
-                            <label class="form-label">Puertos</label>
+                            <label class="form-label fw-semibold">Puertos:</label>
                             <div class="form-control-plaintext">USB 3.0, HDMI, RJ45</div>
                         </div>
                     </div>
 
                     <div class="mb-3">
                         <h6>OTRA INFORMACIÓN</h6>
-                        <label class="form-label">Información</label>
+                        <label class="form-label fw-semibold">Información:</label>
                         <div class="form-control-plaintext">Equipo en buenas condiciones generales.</div>
                     </div>
 
-                    <div class="mb-3">
-                        <label class="form-label">Responsable del mantenimiento</label>
-                        <div class="form-control-plaintext">Daniel Alas</div>
-                    </div>
-
                     <div class="text-end">
-                        <a href="./equipos.html" class="btn btn-secondary">Regresar</a>
+                        <a href="/equipos.html" class="btn btn-secondary">Regresar</a>
                     </div>
                 </div>
             </div>

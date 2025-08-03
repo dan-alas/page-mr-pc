@@ -84,56 +84,76 @@
 
             <div>
 
-                <div class="border p-4 rounded">
+               <div class="border p-4 rounded">
                     <h5 class="fw-bold">MISTER PC BOTEO</h5>
-                    <p class="mb-4">REGISTRO DE MANTENIMIENTO CORRECTIVO Y PREVENTIVO</p>
+                    <p class="mb-2">REGISTRO DE MANTENIMIENTO CORRECTIVO Y PREVENTIVO</p>
+                    <p class="mb-4">Formulario exclusivo para añadir equipos que ya han sido reparados en el pasado, o para equipos reparados en el instante.</p>
+                    
 
                     <!-- I. Datos del evento -->
-                    <h6>I. Datos del evento</h6>
+                    <h6>I. Datos Generales</h6>
                     <div class="row mb-3">
                         <div class="col-md-4">
-                            <label class="form-label">Propietario</label>
+                            <label class="form-label fw-semibold">Propietario: </label>
                             <select class="form-select">
-                                <option selected disabled>Seleccione un propietario</option>
+                                <option disabled>Seleccione un propietario</option>
                                 <option value="1">Daniel Alas</option>
                                 <option value="2">Cesar Ramirez</option>
-                                <!-- aquí tus usuarios dinámicos -->
                             </select>
                         </div>
+
                         <div class="col-md-4">
-                            <label class="form-label">Fecha</label>
+                            <label class="form-label fw-semibold">Fecha de ingreso: </label>
                             <input type="date" class="form-control">
                         </div>
                         <div class="col-md-4">
-                            <label class="form-label">Fecha de Finalización</label>
+                            <label class="form-label fw-semibold">Fecha de Finalización: </label>
                             <input type="date" class="form-control">
                         </div>
-                        <div class="col-md-4">
-                            <label class="form-label">Tipo</label>
+                        <div class="col-md-4 mt-3">
+                            <label class="form-label fw-semibold">Tipo de problema: </label>
                             <select class="form-select">
-                                <option selected disabled>Selecciona el tipo</option>
+                                <option disabled>Selecciona el tipo</option>
                                 <option value="1">Hardware</option>
                                 <option value="2">Software</option>
                                 <option value="3">Hardware y Software</option>
+                            </select>
+                        </div>
 
+                        <div class="col-md-4 mt-3">
+                            <label class="form-label fw-semibold text-danger">Técnico Asignado: </label>
+                            <select class="form-select">
+                                <option disabled>Seleccione un técnico</option>
+                                <option value="1" selected>Daniel Alas</option>
+                                <option value="2">Cesar Ramirez</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-4 mt-3">
+                            <label class="form-label fw-semibold">Estado actual: </label>
+                            <select class="form-select">
+                                <option selected disabled>Selecciona el estado</option>
+                                <option value="1">No iniciado</option>
+                                <option value="2">En proceso</option>
+                                <option value="3">Finalizado</option>
+                                <option value="3">Entregado</option>
                             </select>
                         </div>
                     </div>
 
                     <!-- II. Datos previos del equipo -->
-                    <h6>II. Datos previos del equipo</h6>
-
+                    <h6 class="mt-5">II. Datos previos del equipo</h6>
                     <div class="row mb-3">
                         <div class="col-md-4">
-                            <label class="form-label">Marca</label>
+                            <label class="form-label fw-semibold">Marca: </label>
                             <input type="text" class="form-control">
                         </div>
                         <div class="col-md-4">
-                            <label class="form-label">Modelo</label>
-                            <input type="text" class="form-control">
+                            <label class="form-label fw-semibold">Modelo: </label>
+                            <input type="text" class="form-control" >
                         </div>
                         <div class="col-md-4">
-                            <label class="form-label">Nombre de equipo</label>
+                            <label class="form-label fw-semibold">Nombre de equipo: </label>
                             <input type="text" class="form-control">
                         </div>
                     </div>
@@ -141,27 +161,27 @@
                     <div class="row mb-3">
                         <div class="col-md-4">
                             <h6>MEMORIA RAM</h6>
-                            <label class="form-label">Tipo</label>
+                            <label class="form-label fw-semibold">Tipo:</label>
                             <input type="text" class="form-control mb-2">
-                            <label class="form-label">Capacidad</label>
+                            <label class="form-label fw-semibold">Capacidad:</label>
                             <input type="text" class="form-control mb-2">
-                            <label class="form-label">Slot vacíos</label>
+                            <label class="form-label fw-semibold">Slot vacíos:</label>
                             <input type="text" class="form-control">
                         </div>
                         <div class="col-md-4">
                             <h6>PROCESADOR</h6>
-                            <label class="form-label">Marca</label>
+                            <label class="form-label fw-semibold">Marca:</label>
                             <input type="text" class="form-control mb-2">
-                            <label class="form-label">Velocidad</label>
+                            <label class="form-label fw-semibold">Velocidad:</label>
                             <input type="text" class="form-control">
                         </div>
                         <div class="col-md-4">
                             <h6>SISTEMA OPERATIVO</h6>
-                            <label class="form-label">Nombre</label>
+                            <label class="form-label fw-semibold">Nombre:</label>
                             <input type="text" class="form-control mb-2">
-                            <label class="form-label">Versión</label>
+                            <label class="form-label fw-semibold">Versión:</label>
                             <input type="text" class="form-control mb-2">
-                            <label class="form-label">Arquitectura</label>
+                            <label class="form-label fw-semibold">Arquitectura:</label>
                             <input type="text" class="form-control">
                         </div>
                     </div>
@@ -169,54 +189,45 @@
                     <div class="row mb-3">
                         <div class="col-md-4">
                             <h6>DISCO DURO</h6>
-                            <label class="form-label">Capacidad</label>
+                            <label class="form-label fw-semibold">Capacidad:</label>
                             <input type="text" class="form-control mb-2">
-                            <label class="form-label">Particiones</label>
+                            <label class="form-label fw-semibold"># Particiones:</label>
                             <input type="text" class="form-control">
                         </div>
                         <div class="col-md-4">
                             <h6>TARJETA MADRE</h6>
-                            <label class="form-label">Capacidad</label>
+                            <label class="form-label fw-semibold">Modelo:</label>
                             <input type="text" class="form-control mb-2">
-                            <label class="form-label">Particiones</label>
-                            <input type="text" class="form-control">
+
                         </div>
                         <div class="col-md-4">
                             <h6>PUERTOS</h6>
-                            <label class="form-label">Puertos</label>
+                            <label class="form-label fw-semibold">Puertos:</label>
                             <input type="text" class="form-control">
                         </div>
                     </div>
 
                     <div class="mb-3">
                         <h6>OTRA INFORMACIÓN</h6>
-                        <label class="form-label">Información</label>
-                        <textarea class="form-control" rows="3"></textarea>
+                        <label class="form-label fw-semibold">Información:</label>
+                        <textarea class="form-control" rows="3">Equipo en buenas condiciones generales.</textarea>
                     </div>
 
-                    <h6>III. Aplicación del equipo</h6>
-                    <div class="mb-3">
-                        <label class="form-label">Responsable del mantenimiento</label>
-                        <select class="form-select">
-                            <option selected disabled>Seleccione un tecnico</option>
-                            <option value="1">Daniel Alas</option>
-                            <option value="2">Cesar Ramirez</option>
-
-                        </select>
-                    </div>
+                    <!-- III. Aplicación del equipo -->
+                    <h6 class="mt-5">III. Aplicación del equipo (reparaciones)</h6>
 
                     <div class="mb-3">
-                        <label class="form-label">Describa el proceso que se aplico:</label>
+                        <label class="form-label fw-semibold">Describa el proceso que se aplicó:</label>
                         <textarea class="form-control" rows="3"></textarea>
                     </div>
 
                     <div class="mb-3">
-                        <label class="form-label">Detalles de problemas encontrados:</label>
+                        <label class="form-label fw-semibold">Detalles de problemas encontrados:</label>
                         <textarea class="form-control" rows="3"></textarea>
                     </div>
 
                     <div class="text-end">
-                        <button type="submit" class="btn btn-primary">Guardar equipo</button>
+                        <button type="submit" class="btn btn-primary">Agregar equipo</button>
                     </div>
                 </div>
             </div>
